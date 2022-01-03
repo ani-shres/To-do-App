@@ -11,7 +11,7 @@ import "./item.css";
 import { useState } from "react/cjs/react.development";
 
 const Item = forwardRef(({ items, setItems, item }) => {
-  const [edit, setEdit] = useState(false);
+  const [edit, setEdit] = useState(0);
   const [updateInput, setUpdateInput] = useState(item.input);
 
   const convertToInput = () => {
