@@ -8,7 +8,7 @@ import {
 } from "@heroicons/react/solid";
 import "./Todo.css";
 import "./item.css";
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 
 const Item = forwardRef(({ items, setItems, item }) => {
   const [edit, setEdit] = useState(0);
