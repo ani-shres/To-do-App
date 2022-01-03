@@ -7,7 +7,7 @@ import FlipMove from "react-flip-move";
 const TodoList = forwardRef(({ items, setItems, ref }) => {
   return (
     <div>
-      <h2> List of Todos</h2>
+      <h4> List of Todos</h4>
       <FlipMove enterAnimation="accordionVertical">
         {items.map((item) => {
           return (

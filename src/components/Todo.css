@@ -1,36 +1,37 @@
 .App__header h1 {
-  padding-top: 2%;
-  font-size: xx-large;
+  padding-top: 1%;
+  font-size: x-large;
 }
 
 .App__form {
   display: flex;
   text-align: center;
-  margin-top: 5%;
+  margin-top: 2%;
   margin-left: 10%;
 }
 
 .form__input {
+
   width: 85%;
   min-width: 100px;
-  font-size: x-large;
+  height: 40px;
+  font-size: medium;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
- 
   font-family: "B612 Mono", monospace;
 }
 
 .form__button {
-   
     border-style: hidden;
     cursor: pointer;
-    margin: 5px;
-    height: 60px;
-    width: 60px;
+   margin-left:5px;
+
+    height: 45px;
+    width: 50px;
     /* From https://css.glass */
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
@@ -38,11 +39,13 @@
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
+  
   }
 
   .form__button--plus {
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     background-color: transparent;
+    
     
   }

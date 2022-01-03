@@ -22,8 +22,8 @@
 
   width: 90%;
   overflow-y: scroll;
-  height: 5vmin;
-  font-size: x-large;
+  height: 20px;
+  font-size: medium;
   text-align: left;
   padding: 10px;
   background-color: transparent;
