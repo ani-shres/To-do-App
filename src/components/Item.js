@@ -1,6 +1,5 @@
 import React, { forwardRef } from "react";
 import {
-  PlusIcon,
   CheckCircleIcon,
   TrashIcon,
   PencilAltIcon,
