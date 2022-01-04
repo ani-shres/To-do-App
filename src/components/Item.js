@@ -93,21 +93,41 @@ const Item = forwardRef(({ items, setItems, item }) => {
         </>
       ) : (
         <>
-          <div className="todo__item__icons">
-            <CheckCircleIcon
-              className="todo__item__icons--type green"
-              onClick={(e) => completeHandle(e, item.key)}
-            />
-            <PencilAltIcon
-              className="todo__item__icons--type blue"
-              onClick={convertToInput}
-            />
-            <TrashIcon
-              key={item.key}
-              className="todo__item__icons--type red"
-              onClick={(e) => deleteTodo(e, item.key)}
-            />
-          </div>
+          {item.completed ? (
+            <>
+              {" "}
+              <div className="todo__item__icons">
+                <CheckCircleIcon
+                  className="todo__item__icons--type green"
+                  onClick={(e) => completeHandle(e, item.key)}
+                />
+                <TrashIcon
+                  key={item.key}
+                  className="todo__item__icons--type red"
+                  onClick={(e) => deleteTodo(e, item.key)}
+                />
+              </div>
+            </>
+          ) : (
+            <>
+              {" "}
+              <div className="todo__item__icons">
+                <CheckCircleIcon
+                  className="todo__item__icons--type green"
+                  onClick={(e) => completeHandle(e, item.key)}
+                />
+                <PencilAltIcon
+                  className="todo__item__icons--type blue"
+                  onClick={convertToInput}
+                />
+                <TrashIcon
+                  key={item.key}
+                  className="todo__item__icons--type red"
+                  onClick={(e) => deleteTodo(e, item.key)}
+                />
+              </div>
+            </>
+          )}
         </>
       )}
     </div>
